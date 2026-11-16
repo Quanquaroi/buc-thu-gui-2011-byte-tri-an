@@ -25,6 +25,138 @@
 .wall-empty{grid-column:1/-1;text-align:center;padding:35px 20px;border:1px dashed #e4cbd4;border-radius:10px;color:#9d8290;background:#fffdfc;font:16px var(--display)}
 
   </style>
+
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="petal-layer" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Echo of Thanks trang chủ">
+      <span class="brand-mark"><span>e</span><i>✦</i></span>
+      <span class="brand-copy"><strong>echo<span>of</span>thanks</strong><small>TRẠM TRI ÂN KỸ THUẬT SỐ</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+      <a href="#story">Câu chuyện</a><a href="#studio">Tạo lời tri ân</a><a href="#wall">Bức tường</a>
+    </nav>
+    <div class="header-actions">
+      <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" title="Bật âm thanh dịu nhẹ"><span class="sound-bars">♫</span><span>Giai điệu</span></button>
+      <a class="button button-small button-dark" href="#studio">Bắt đầu <span>↗</span></a>
+      <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Mở menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> MÓN QUÀ SỐ DÀNH TẶNG NGƯỜI TRUYỀN CẢM HỨNG</div>
+        <h1>Có những điều<br>nên được <em>nói thành lời.</em></h1>
+        <p class="hero-lead">Một lời cảm ơn, một tấm thiệp, một kỷ niệm được lưu giữ. Hãy để công nghệ giúp bạn gửi trao lòng biết ơn theo cách thật riêng.</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#studio">Tạo lời tri ân <span>✦</span></a><a class="text-link" href="#wall">Khám phá lời chúc <span>↓</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>🌼</span><span>💌</span><span>🌷</span></div><div><strong>Mỗi lời chúc là một dấu ấn</strong><small>Được viết bằng sự trân trọng</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Minh họa phong bì tri ân">
+        <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+        <div class="floating-note note-top"><span>✦</span> Một lời cảm ơn</div>
+        <div class="floating-note note-bottom"><span>♡</span> Gửi người truyền cảm hứng</div>
+        <div class="hero-envelope" id="hero-envelope">
+          <div class="envelope-shadow"></div><div class="envelope-back"></div>
+          <div class="letter-peek"><span class="letter-spark">✧</span><span class="letter-heading">Gửi thầy cô kính mến</span><span class="letter-line"></span><span class="letter-line short"></span><span class="letter-flower">🌼</span></div>
+          <div class="envelope-pocket"></div><div class="envelope-flap"></div><div class="envelope-seal">e<span>♡</span></div>
+        </div>
+        <div class="sunflower sunflower-a">🌼</div><div class="sunflower sunflower-b">🌻</div>
+        <div class="art-caption">A LITTLE NOTE, A LOT OF GRATITUDE.</div>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="hero-bottom-line"></span><span>MADE WITH GRATITUDE</span></div>
+    </section>
+
+    <section class="story section-wrap" id="story">
+      <div class="section-kicker">01 — THE IDEA</div>
+      <div class="story-layout"><div><h2>Tri ân không chỉ là<br><em>một ngày trong năm.</em></h2></div><div class="story-text"><p>Echo of Thanks là không gian số để sinh viên gửi lời cảm ơn đến thầy cô bằng ngôn ngữ của riêng mình — từ một bức thư mộc mạc đến một lời chúc đậm chất công nghệ.</p><p>Chúng mình kết nối thiết kế tương tác và những câu chuyện chân thành để biến lòng biết ơn thành món quà có thể mở ra, lưu lại và sẻ chia.</p></div></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-index">01</span><div class="feature-icon">✧</div><h3>Gợi ý lời tri ân</h3><p>Gợi ý thư, thơ và lời chúc theo bộ môn, chuyên ngành và phong cách bạn chọn.</p><span class="feature-foot">WORDS WITH MEANING ↗</span></article>
+        <article class="feature-card feature-card-highlight"><span class="feature-index">02</span><div class="feature-icon">✉</div><h3>Thiệp mở 3D</h3><p>Phong bì tương tác, thiết kế thiệp riêng, tải ảnh và chia sẻ lời chúc đến thầy cô.</p><span class="feature-foot">A GIFT TO OPEN ↗</span></article>
+        <article class="feature-card"><span class="feature-index">03</span><div class="feature-icon">♡</div><h3>Live Wall of Thanks</h3><p>Bức tường lời chúc kết nối cộng đồng, nơi những lời nhắn được lưu giữ sau khi duyệt.</p><span class="feature-foot">ONE WALL, MANY HEARTS ↗</span></article>
+      </div>
+    </section>
+
+    <section class="studio-section" id="studio">
+      <div class="section-wrap">
+        <div class="section-heading"><div><div class="section-kicker">02 — THE GRATITUDE STUDIO</div><h2>Viết lời cảm ơn<br><em>theo cách của bạn.</em></h2></div><p>Chọn người nhận, bộ môn và phong cách. Echo sẽ giúp bạn phác thảo một lời tri ân độc đáo để bạn chỉnh sửa trước khi gửi.</p></div>
+        <div class="studio-grid">
+          <form class="studio-form" id="gratitude-form">
+            <div class="form-topline"><span class="step-pill">✦ PERSONALIZE YOUR NOTE</span><span class="form-count">01 — 04</span></div>
+            <div class="field-grid">
+              <label class="field"><span>Người nhận <b>*</b></span><input id="teacher-name" name="teacher" maxlength="60" placeholder="Ví dụ: Cô Nguyễn Thu Hà" required /></label>
+              <label class="field"><span>Người gửi</span><input id="sender-name" name="sender" maxlength="45" placeholder="Tên của bạn / tập thể lớp" /></label>
+              <label class="field"><span>Bộ môn / chuyên ngành <b>*</b></span><select id="subject" name="subject" required><option value="Lập trình">Công nghệ thông tin — Lập trình</option><option value="Mạng máy tính">Mạng máy tính</option><option value="Toán rời rạc">Toán rời rạc</option><option value="Cơ sở dữ liệu">Cơ sở dữ liệu</option><option value="Trí tuệ nhân tạo">Trí tuệ nhân tạo</option><option value="Tiếng Anh">Tiếng Anh</option><option value="Vật lý">Vật lý</option><option value="Ngữ văn">Ngữ văn</option><option value="Bộ môn khác">Bộ môn khác</option></select></label>
+              <label class="field"><span>Kiểu nội dung</span><select id="format" name="format"><option value="letter">Bức thư chân thành</option><option value="poem">Bài thơ ngắn</option><option value="code">Lời chúc phong cách code</option><option value="special">Ẩn dụ chuyên ngành</option></select></label>
+            </div>
+            <div class="field"><span class="field-label">Sắc thái lời chúc</span><div class="tone-options" role="group" aria-label="Chọn sắc thái"><button type="button" class="tone-chip active" data-tone="Chân thành">♡ Chân thành</button><button type="button" class="tone-chip" data-tone="Trang trọng">✧ Trang trọng</button><button type="button" class="tone-chip" data-tone="Tươi vui">☼ Tươi vui</button><button type="button" class="tone-chip" data-tone="Sáng tạo">✦ Sáng tạo</button></div></div>
+            <label class="field"><span>Lời nhắn riêng (không bắt buộc)</span><textarea id="personal-memory" maxlength="220" rows="3" placeholder="Một kỷ niệm, một điều bạn muốn cảm ơn, hoặc điều thầy cô đã truyền cảm hứng..."></textarea><small class="field-hint">Không nhập thông tin riêng tư của thầy cô hoặc bạn học.</small></label>
+            <div class="form-bottom"><button class="button button-primary button-generate" id="generate-btn" type="submit"><span>✦</span> Tạo lời tri ân <span class="button-arrow">↗</span></button><span class="ai-status" id="ai-status"><i></i> Nội dung được gợi ý từ bộ mẫu</span></div>
+          </form>
+
+          <div class="preview-column">
+            <div class="preview-header"><span>YOUR LETTER PREVIEW</span><span class="preview-live"><i></i> LIVE PREVIEW</span></div>
+            <div class="letter-stage">
+              <div class="stage-glow"></div>
+              <article class="letter-card" id="letter-card">
+                <div class="card-corner corner-tl">✿</div><div class="card-corner corner-tr">✧</div>
+                <div class="card-brand">ECHO OF THANKS <span>✦</span></div>
+                <div class="card-flower-line">✿　❀　✿</div>
+                <div class="card-to">GỬI ĐẾN NGƯỜI THẦY, NGƯỜI CÔ</div>
+                <h3 id="card-title">Người truyền cảm hứng</h3>
+                <div class="card-divider"><span>♡</span></div>
+                <p class="card-message" id="card-message">“Có những bài học không chỉ nằm trong trang sách, mà còn ở cách thầy cô kiên nhẫn đồng hành và tin tưởng chúng em mỗi ngày.”</p>
+                <div class="card-sign" id="card-sign">Với tất cả sự biết ơn,<br><strong>Một người học trò</strong></div>
+                <div class="card-bottom">20 · 11 <span>—</span> ALWAYS GRATEFUL</div>
+                <div class="card-corner corner-bl">❀</div><div class="card-corner corner-br">✿</div>
+              </article>
+              <div class="envelope-3d" id="envelope-3d" aria-label="Phong bì thư 3D"><div class="env-back"></div><div class="env-letter"><span>GỬI THẦY CÔ</span><b>♡</b><i></i><i></i><i class="short"></i></div><div class="env-front"></div><div class="env-flap"></div><div class="env-seal">e</div></div>
+              <button class="open-envelope" id="open-envelope" type="button"><span>✉</span> Mở phong bì 3D</button>
+            </div>
+            <div class="preview-actions"><button class="button button-outline" id="download-card" type="button">↓ Tải thiệp PNG</button><button class="button button-outline" id="copy-card-link" type="button">↗ Sao chép link thiệp</button><button class="button button-soft" id="send-wall" type="button">♡ Gửi lên bức tường</button></div>
+            <p class="preview-footnote" id="preview-footnote">Thiệp sẽ cập nhật khi bạn tạo lời tri ân. Bạn có thể chỉnh sửa nội dung trước khi tải hoặc chia sẻ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wall-section" id="wall">
+      <div class="section-wrap">
+        <div class="wall-heading"><div><div class="section-kicker">03 — LIVE WALL OF THANKS</div><h2>Một bức tường,<br><em>ngàn lời biết ơn.</em></h2></div><div class="wall-side"><p>Những lời nhắn nhỏ bé, khi được đặt cạnh nhau, tạo thành một điều thật lớn lao.</p><span class="wall-status" id="wall-status"><i></i> Đang hiển thị lời chúc mẫu</span></div></div>
+        <div class="wall-grid" id="wall-grid" aria-live="polite">
+          <article class="wall-note note-blush"><span class="note-pin"></span><div class="note-mark">“</div><p>Cảm ơn cô vì đã khiến mỗi buổi học trở thành một nơi chúng em muốn quay lại.</p><footer><strong>Minh Anh</strong><span>Gửi cô giáo</span></footer><div class="note-stamp">♡</div></article>
+          <article class="wall-note note-cream"><span class="note-pin"></span><div class="note-mark">“</div><p>Thầy đã dạy chúng em rằng một dòng code tốt bắt đầu từ tư duy rõ ràng và một trái tim kiên nhẫn.</p><footer><strong>Nhóm sinh viên CNTT</strong><span>Gửi thầy Lập trình</span></footer><div class="note-stamp">✦</div></article>
+          <article class="wall-note note-lilac"><span class="note-pin"></span><div class="note-mark">“</div><p>Mong những điều tốt đẹp thầy cô trao đi sẽ luôn trở về bằng thật nhiều niềm vui.</p><footer><strong>Một người học trò</strong><span>Gửi thầy cô</span></footer><div class="note-stamp">❀</div></article>
+          <article class="wall-note note-peach"><span class="note-pin"></span><div class="note-mark">“</div><p>Cảm ơn thầy đã giúp chúng em không ngại những bài toán khó và luôn dám thử thêm một lần nữa.</p><footer><strong>Đội BYTE TRI ÂN</strong><span>Gửi thầy Toán</span></footer><div class="note-stamp">♡</div></article>
+        </div>
+        <div class="wall-bottom"><span>NOTES MADE WITH LOVE & GRATITUDE</span><button class="wall-refresh" id="refresh-wall" type="button">↻ Làm mới bức tường</button></div>
+      </div>
+    </section>
+
+    <section class="team-section section-wrap" id="team">
+      <div class="team-head"><div><div class="section-kicker">04 — THE PEOPLE BEHIND THE NOTE</div><h2>Được tạo nên bởi<br><em>BYTE TRI ÂN.</em></h2></div><p>Năm góc nhìn, một lời cảm ơn chung. Mỗi thành viên góp một phần để biến ý tưởng thành trải nghiệm số.</p></div>
+      <div class="team-grid">
+        <article class="team-member"><span>01</span><div class="team-avatar">Q</div><h3>Đinh Thị Minh Quyên</h3><p>Trưởng nhóm · Điều phối & tích hợp</p></article>
+        <article class="team-member"><span>02</span><div class="team-avatar">C</div><h3>Nguyễn Quân</h3><p>Thiết kế UI/UX · Mỹ thuật</p></article>
+        <article class="team-member"><span>03</span><div class="team-avatar">Q</div><h3>Trịnh Văn Quốc Nguyên</h3><p>HTML · CSS · Responsive</p></article>
+        <article class="team-member"><span>04</span><div class="team-avatar">H</div><h3>Nguyễn Phúc Hàn Nguyên</h3><p>JavaScript · Tích hợp API</p></article>
+
+      </div>
+      <p class="team-note">Tên hiển thị theo danh sách nhóm đã cung cấp. Hãy xác nhận cách viết họ tên trước khi công khai.</p>
+    </section>
+
+    <section class="closing section-wrap">
+      <div class="closing-flower">🌼</div><div class="closing-kicker">A SMALL GESTURE, A LASTING MEMORY</div><h2>Gửi đi một lời cảm ơn.<br><em>Giữ lại một điều đẹp đẽ.</em></h2><a href="#studio" class="button button-light">Viết lời tri ân của bạn <span>↗</span></a>
+      <div class="closing-orbit"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand">echo<span>of</span>thanks<span class="footer-star">✦</span></div><div class="footer-line">Được tạo nên bằng công nghệ, gửi trao bằng lòng biết ơn.</div><div class="footer-meta"><span>CODE THE THANKS 2026</span><span>BYTE TRI ÂN · 5 MEMBERS</span><span>© 2026</span></div></footer>
+
+  <div class="modal-backdrop" id="letter-modal" aria-hidden="true"><div class="letter-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="close-modal" type="button" aria-label="Đóng">×</button><div class="modal-flower">🌼</div><div class="modal-kicker">A LETTER FOR YOU</div><h2 id="modal-title">Một lời cảm ơn chân thành</h2><p id="modal-message">Cảm ơn thầy cô vì đã luôn đồng hành.</p><div class="modal-sign" id="modal-sign">— Một người học trò</div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
 (() => {
   'use strict';
@@ -383,136 +515,5 @@
 })();
 
   </script>
-</head>
-<body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <div id="petal-layer" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Echo of Thanks trang chủ">
-      <span class="brand-mark"><span>e</span><i>✦</i></span>
-      <span class="brand-copy"><strong>echo<span>of</span>thanks</strong><small>TRẠM TRI ÂN KỸ THUẬT SỐ</small></span>
-    </a>
-    <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
-      <a href="#story">Câu chuyện</a><a href="#studio">Tạo lời tri ân</a><a href="#wall">Bức tường</a>
-    </nav>
-    <div class="header-actions">
-      <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" title="Bật âm thanh dịu nhẹ"><span class="sound-bars">♫</span><span>Giai điệu</span></button>
-      <a class="button button-small button-dark" href="#studio">Bắt đầu <span>↗</span></a>
-      <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Mở menu">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-dot"></span> MÓN QUÀ SỐ DÀNH TẶNG NGƯỜI TRUYỀN CẢM HỨNG</div>
-        <h1>Có những điều<br>nên được <em>nói thành lời.</em></h1>
-        <p class="hero-lead">Một lời cảm ơn, một tấm thiệp, một kỷ niệm được lưu giữ. Hãy để công nghệ giúp bạn gửi trao lòng biết ơn theo cách thật riêng.</p>
-        <div class="hero-buttons"><a class="button button-primary" href="#studio">Tạo lời tri ân <span>✦</span></a><a class="text-link" href="#wall">Khám phá lời chúc <span>↓</span></a></div>
-        <div class="hero-proof"><div class="avatar-stack"><span>🌼</span><span>💌</span><span>🌷</span></div><div><strong>Mỗi lời chúc là một dấu ấn</strong><small>Được viết bằng sự trân trọng</small></div></div>
-      </div>
-      <div class="hero-art" aria-label="Minh họa phong bì tri ân">
-        <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
-        <div class="floating-note note-top"><span>✦</span> Một lời cảm ơn</div>
-        <div class="floating-note note-bottom"><span>♡</span> Gửi người truyền cảm hứng</div>
-        <div class="hero-envelope" id="hero-envelope">
-          <div class="envelope-shadow"></div><div class="envelope-back"></div>
-          <div class="letter-peek"><span class="letter-spark">✧</span><span class="letter-heading">Gửi thầy cô kính mến</span><span class="letter-line"></span><span class="letter-line short"></span><span class="letter-flower">🌼</span></div>
-          <div class="envelope-pocket"></div><div class="envelope-flap"></div><div class="envelope-seal">e<span>♡</span></div>
-        </div>
-        <div class="sunflower sunflower-a">🌼</div><div class="sunflower sunflower-b">🌻</div>
-        <div class="art-caption">A LITTLE NOTE, A LOT OF GRATITUDE.</div>
-      </div>
-      <div class="hero-bottom"><span>01 / 03</span><span class="hero-bottom-line"></span><span>MADE WITH GRATITUDE</span></div>
-    </section>
-
-    <section class="story section-wrap" id="story">
-      <div class="section-kicker">01 — THE IDEA</div>
-      <div class="story-layout"><div><h2>Tri ân không chỉ là<br><em>một ngày trong năm.</em></h2></div><div class="story-text"><p>Echo of Thanks là không gian số để sinh viên gửi lời cảm ơn đến thầy cô bằng ngôn ngữ của riêng mình — từ một bức thư mộc mạc đến một lời chúc đậm chất công nghệ.</p><p>Chúng mình kết nối thiết kế tương tác và những câu chuyện chân thành để biến lòng biết ơn thành món quà có thể mở ra, lưu lại và sẻ chia.</p></div></div>
-      <div class="feature-grid">
-        <article class="feature-card"><span class="feature-index">01</span><div class="feature-icon">✧</div><h3>Gợi ý lời tri ân</h3><p>Gợi ý thư, thơ và lời chúc theo bộ môn, chuyên ngành và phong cách bạn chọn.</p><span class="feature-foot">WORDS WITH MEANING ↗</span></article>
-        <article class="feature-card feature-card-highlight"><span class="feature-index">02</span><div class="feature-icon">✉</div><h3>Thiệp mở 3D</h3><p>Phong bì tương tác, thiết kế thiệp riêng, tải ảnh và chia sẻ lời chúc đến thầy cô.</p><span class="feature-foot">A GIFT TO OPEN ↗</span></article>
-        <article class="feature-card"><span class="feature-index">03</span><div class="feature-icon">♡</div><h3>Live Wall of Thanks</h3><p>Bức tường lời chúc kết nối cộng đồng, nơi những lời nhắn được lưu giữ sau khi duyệt.</p><span class="feature-foot">ONE WALL, MANY HEARTS ↗</span></article>
-      </div>
-    </section>
-
-    <section class="studio-section" id="studio">
-      <div class="section-wrap">
-        <div class="section-heading"><div><div class="section-kicker">02 — THE GRATITUDE STUDIO</div><h2>Viết lời cảm ơn<br><em>theo cách của bạn.</em></h2></div><p>Chọn người nhận, bộ môn và phong cách. Echo sẽ giúp bạn phác thảo một lời tri ân độc đáo để bạn chỉnh sửa trước khi gửi.</p></div>
-        <div class="studio-grid">
-          <form class="studio-form" id="gratitude-form">
-            <div class="form-topline"><span class="step-pill">✦ PERSONALIZE YOUR NOTE</span><span class="form-count">01 — 04</span></div>
-            <div class="field-grid">
-              <label class="field"><span>Người nhận <b>*</b></span><input id="teacher-name" name="teacher" maxlength="60" placeholder="Ví dụ: Cô Nguyễn Thu Hà" required /></label>
-              <label class="field"><span>Người gửi</span><input id="sender-name" name="sender" maxlength="45" placeholder="Tên của bạn / tập thể lớp" /></label>
-              <label class="field"><span>Bộ môn / chuyên ngành <b>*</b></span><select id="subject" name="subject" required><option value="Lập trình">Công nghệ thông tin — Lập trình</option><option value="Mạng máy tính">Mạng máy tính</option><option value="Toán rời rạc">Toán rời rạc</option><option value="Cơ sở dữ liệu">Cơ sở dữ liệu</option><option value="Trí tuệ nhân tạo">Trí tuệ nhân tạo</option><option value="Tiếng Anh">Tiếng Anh</option><option value="Vật lý">Vật lý</option><option value="Ngữ văn">Ngữ văn</option><option value="Bộ môn khác">Bộ môn khác</option></select></label>
-              <label class="field"><span>Kiểu nội dung</span><select id="format" name="format"><option value="letter">Bức thư chân thành</option><option value="poem">Bài thơ ngắn</option><option value="code">Lời chúc phong cách code</option><option value="special">Ẩn dụ chuyên ngành</option></select></label>
-            </div>
-            <div class="field"><span class="field-label">Sắc thái lời chúc</span><div class="tone-options" role="group" aria-label="Chọn sắc thái"><button type="button" class="tone-chip active" data-tone="Chân thành">♡ Chân thành</button><button type="button" class="tone-chip" data-tone="Trang trọng">✧ Trang trọng</button><button type="button" class="tone-chip" data-tone="Tươi vui">☼ Tươi vui</button><button type="button" class="tone-chip" data-tone="Sáng tạo">✦ Sáng tạo</button></div></div>
-            <label class="field"><span>Lời nhắn riêng (không bắt buộc)</span><textarea id="personal-memory" maxlength="220" rows="3" placeholder="Một kỷ niệm, một điều bạn muốn cảm ơn, hoặc điều thầy cô đã truyền cảm hứng..."></textarea><small class="field-hint">Không nhập thông tin riêng tư của thầy cô hoặc bạn học.</small></label>
-            <div class="form-bottom"><button class="button button-primary button-generate" id="generate-btn" type="submit"><span>✦</span> Tạo lời tri ân <span class="button-arrow">↗</span></button><span class="ai-status" id="ai-status"><i></i> Nội dung được gợi ý từ bộ mẫu</span></div>
-          </form>
-
-          <div class="preview-column">
-            <div class="preview-header"><span>YOUR LETTER PREVIEW</span><span class="preview-live"><i></i> LIVE PREVIEW</span></div>
-            <div class="letter-stage">
-              <div class="stage-glow"></div>
-              <article class="letter-card" id="letter-card">
-                <div class="card-corner corner-tl">✿</div><div class="card-corner corner-tr">✧</div>
-                <div class="card-brand">ECHO OF THANKS <span>✦</span></div>
-                <div class="card-flower-line">✿　❀　✿</div>
-                <div class="card-to">GỬI ĐẾN NGƯỜI THẦY, NGƯỜI CÔ</div>
-                <h3 id="card-title">Người truyền cảm hứng</h3>
-                <div class="card-divider"><span>♡</span></div>
-                <p class="card-message" id="card-message">“Có những bài học không chỉ nằm trong trang sách, mà còn ở cách thầy cô kiên nhẫn đồng hành và tin tưởng chúng em mỗi ngày.”</p>
-                <div class="card-sign" id="card-sign">Với tất cả sự biết ơn,<br><strong>Một người học trò</strong></div>
-                <div class="card-bottom">20 · 11 <span>—</span> ALWAYS GRATEFUL</div>
-                <div class="card-corner corner-bl">❀</div><div class="card-corner corner-br">✿</div>
-              </article>
-              <div class="envelope-3d" id="envelope-3d" aria-label="Phong bì thư 3D"><div class="env-back"></div><div class="env-letter"><span>GỬI THẦY CÔ</span><b>♡</b><i></i><i></i><i class="short"></i></div><div class="env-front"></div><div class="env-flap"></div><div class="env-seal">e</div></div>
-              <button class="open-envelope" id="open-envelope" type="button"><span>✉</span> Mở phong bì 3D</button>
-            </div>
-            <div class="preview-actions"><button class="button button-outline" id="download-card" type="button">↓ Tải thiệp PNG</button><button class="button button-outline" id="copy-card-link" type="button">↗ Sao chép link thiệp</button><button class="button button-soft" id="send-wall" type="button">♡ Gửi lên bức tường</button></div>
-            <p class="preview-footnote" id="preview-footnote">Thiệp sẽ cập nhật khi bạn tạo lời tri ân. Bạn có thể chỉnh sửa nội dung trước khi tải hoặc chia sẻ.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wall-section" id="wall">
-      <div class="section-wrap">
-        <div class="wall-heading"><div><div class="section-kicker">03 — LIVE WALL OF THANKS</div><h2>Một bức tường,<br><em>ngàn lời biết ơn.</em></h2></div><div class="wall-side"><p>Những lời nhắn nhỏ bé, khi được đặt cạnh nhau, tạo thành một điều thật lớn lao.</p><span class="wall-status" id="wall-status"><i></i> Đang hiển thị lời chúc mẫu</span></div></div>
-        <div class="wall-grid" id="wall-grid" aria-live="polite">
-          <article class="wall-note note-blush"><span class="note-pin"></span><div class="note-mark">“</div><p>Cảm ơn cô vì đã khiến mỗi buổi học trở thành một nơi chúng em muốn quay lại.</p><footer><strong>Minh Anh</strong><span>Gửi cô giáo</span></footer><div class="note-stamp">♡</div></article>
-          <article class="wall-note note-cream"><span class="note-pin"></span><div class="note-mark">“</div><p>Thầy đã dạy chúng em rằng một dòng code tốt bắt đầu từ tư duy rõ ràng và một trái tim kiên nhẫn.</p><footer><strong>Nhóm sinh viên CNTT</strong><span>Gửi thầy Lập trình</span></footer><div class="note-stamp">✦</div></article>
-          <article class="wall-note note-lilac"><span class="note-pin"></span><div class="note-mark">“</div><p>Mong những điều tốt đẹp thầy cô trao đi sẽ luôn trở về bằng thật nhiều niềm vui.</p><footer><strong>Một người học trò</strong><span>Gửi thầy cô</span></footer><div class="note-stamp">❀</div></article>
-          <article class="wall-note note-peach"><span class="note-pin"></span><div class="note-mark">“</div><p>Cảm ơn thầy đã giúp chúng em không ngại những bài toán khó và luôn dám thử thêm một lần nữa.</p><footer><strong>Đội BYTE TRI ÂN</strong><span>Gửi thầy Toán</span></footer><div class="note-stamp">♡</div></article>
-        </div>
-        <div class="wall-bottom"><span>NOTES MADE WITH LOVE & GRATITUDE</span><button class="wall-refresh" id="refresh-wall" type="button">↻ Làm mới bức tường</button></div>
-      </div>
-    </section>
-
-    <section class="team-section section-wrap" id="team">
-      <div class="team-head"><div><div class="section-kicker">04 — THE PEOPLE BEHIND THE NOTE</div><h2>Được tạo nên bởi<br><em>BYTE TRI ÂN.</em></h2></div><p>Năm góc nhìn, một lời cảm ơn chung. Mỗi thành viên góp một phần để biến ý tưởng thành trải nghiệm số.</p></div>
-      <div class="team-grid">
-        <article class="team-member"><span>01</span><div class="team-avatar">Q</div><h3>Đinh Thị Minh Quyên</h3><p>Trưởng nhóm · Điều phối & tích hợp</p></article>
-        <article class="team-member"><span>02</span><div class="team-avatar">C</div><h3>Nguyễn Quân</h3><p>Thiết kế UI/UX · Mỹ thuật</p></article>
-        <article class="team-member"><span>03</span><div class="team-avatar">Q</div><h3>Trịnh Văn Quốc Nguyên</h3><p>HTML · CSS · Responsive</p></article>
-        <article class="team-member"><span>04</span><div class="team-avatar">H</div><h3>Nguyễn Phúc Hàn Nguyên</h3><p>JavaScript · Tích hợp API</p></article>
-
-      </div>
-      <p class="team-note">Tên hiển thị theo danh sách nhóm đã cung cấp. Hãy xác nhận cách viết họ tên trước khi công khai.</p>
-    </section>
-
-    <section class="closing section-wrap">
-      <div class="closing-flower">🌼</div><div class="closing-kicker">A SMALL GESTURE, A LASTING MEMORY</div><h2>Gửi đi một lời cảm ơn.<br><em>Giữ lại một điều đẹp đẽ.</em></h2><a href="#studio" class="button button-light">Viết lời tri ân của bạn <span>↗</span></a>
-      <div class="closing-orbit"></div>
-    </section>
-  </main>
-
-  <footer class="site-footer"><div class="footer-brand">echo<span>of</span>thanks<span class="footer-star">✦</span></div><div class="footer-line">Được tạo nên bằng công nghệ, gửi trao bằng lòng biết ơn.</div><div class="footer-meta"><span>CODE THE THANKS 2026</span><span>BYTE TRI ÂN · 5 MEMBERS</span><span>© 2026</span></div></footer>
-
-  <div class="modal-backdrop" id="letter-modal" aria-hidden="true"><div class="letter-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="close-modal" type="button" aria-label="Đóng">×</button><div class="modal-flower">🌼</div><div class="modal-kicker">A LETTER FOR YOU</div><h2 id="modal-title">Một lời cảm ơn chân thành</h2><p id="modal-message">Cảm ơn thầy cô vì đã luôn đồng hành.</p><div class="modal-sign" id="modal-sign">— Một người học trò</div></div></div>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
